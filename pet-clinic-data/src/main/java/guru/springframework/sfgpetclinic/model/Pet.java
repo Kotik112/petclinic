@@ -12,7 +12,7 @@ import java.time.LocalDate;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Pet {
+public class Pet extends BaseEntity {
 
     //@Column(name = "name")
     private String name;
