@@ -2,9 +2,25 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>List of Vets</title>
+    <title>Pet Clinic Imdex</title>
 </head>
 <body>
-  <h1 th:text="'List of Vets'">List of Vets...</h1>
+<h1 th:text="'List of Vets'">Vets List</h1>
+<table>
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="vets : ${vets}">
+        <td th:text="${vets.id}">1</td>
+        <td th:text="${vets.firstName}">George</td>
+        <td th:text="${vets.lastName}">Franklin</td>
+    </tr>
+    </tbody>
+</table>
 </body>
 </html>
