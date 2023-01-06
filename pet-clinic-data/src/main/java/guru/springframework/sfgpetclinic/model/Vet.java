@@ -13,13 +13,5 @@ import java.util.Set;
 @NoArgsConstructor
 public class Vet extends Person {
 
-    private Set<Speciality> specialities = new HashSet<>();
-
-    public Set<Speciality> getSpecialities() {
-        return specialities;
-    }
-
-    public void setSpecialities(Set<Speciality> specialities) {
-        this.specialities = specialities;
-    }
+    private Set<Speciality> specialities = new HashSet<>(); // Vet has a Set of Specialities
 }
