@@ -1,21 +1,23 @@
 package guru.springframework.sfgpetclinic.model;
 
-/**
- * Created by jt on 7/13/18.
- */
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import java.util.Set;
+
+@Getter
+@Setter
+@NoArgsConstructor
 public class Owner extends Person {
+    private Set<Pet> pets;
 
-    //@Column(name = "address")
-    private String address;
+    public Set<Pet> getPets() {
+        return pets;
+    }
 
-    //@Column(name = "city")
-    private String city;
-
-    //@Column(name = "telephone")
-    private String telephone;
-
-
-
-
+    public void setPets(Set<Pet> pets) {
+        this.pets = pets;
+    }
 
 }
